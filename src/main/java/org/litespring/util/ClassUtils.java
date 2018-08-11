@@ -5,6 +5,17 @@ import java.util.Map;
 
 
 public abstract class ClassUtils {
+	/** The package separator character: '.' */
+	private static final char PACKAGE_SEPARATOR = '.';
+
+	/** The path separator character: '/' */
+	private static final char PATH_SEPARATOR = '/';
+
+	/** The inner class separator character: '$' */
+	private static final char INNER_CLASS_SEPARATOR = '$';
+
+	/** The CGLIB class separator: "$$" */
+	public static final String CGLIB_CLASS_SEPARATOR = "$$";
 	
 	/**
 	 * Map with primitive wrapper type as key and corresponding primitive
@@ -82,6 +93,11 @@ public abstract class ClassUtils {
 			}
 		}
 		return false;
+	}
+
+	public static String convertResourcePathToClassName(String resourcePath) {
+		Assert.notNull(resourcePath, "Resource path must not be null");
+		return resourcePath.replace(PATH_SEPARATOR, PACKAGE_SEPARATOR);
 	}
 
 }

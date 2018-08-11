@@ -2,5 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/org/litespring/test/v4/ApplicationContextTest4.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/org/litespring/test/v4/ClassPathBeanDefinitionScannerTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/org/litespring/test/v4/ClassReaderTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/org/litespring/test/v4/MetadataReaderTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/org/litespring/test/v4/PackageResourceLoaderTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/org/litespring/test/v4/XmlBeanDefinitionReaderTest.java" charset="GBK" />
   </component>
 </project>
