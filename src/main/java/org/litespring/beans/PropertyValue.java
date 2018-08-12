@@ -1,5 +1,8 @@
 package org.litespring.beans;
 
+/**
+ * <property></property>节点
+ */
 public class PropertyValue {
 	private final String name;
 

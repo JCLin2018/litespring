@@ -1,11 +1,11 @@
 package org.litespring.beans.factory.support;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.litespring.beans.BeanDefinition;
 import org.litespring.beans.ConstructorArgument;
 import org.litespring.beans.PropertyValue;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Bean定义实现类
@@ -20,7 +20,8 @@ public class GenericBeanDefinition implements BeanDefinition {
 	List<PropertyValue> propertyValues = new ArrayList<PropertyValue>();
 	//constructor-arg对象
 	private ConstructorArgument constructorArgument = new ConstructorArgument();
-	
+
+	public GenericBeanDefinition() {}
 	public GenericBeanDefinition(String id, String beanClassName) {
 		this.id = id;
 		this.beanClassName = beanClassName;
@@ -28,7 +29,10 @@ public class GenericBeanDefinition implements BeanDefinition {
 	public String getBeanClassName() {
 		return this.beanClassName;
 	}
-	
+	public void setBeanClassName(String beanClassName) {
+		this.beanClassName = beanClassName;
+	}
+
 	public boolean isSingleton() {
 		return this.singleton;
 	}
@@ -67,11 +71,19 @@ public class GenericBeanDefinition implements BeanDefinition {
 		return this.constructorArgument;
 	}
 	/**
-	 * 获取beanid
+	 * 获取beanId
 	 * @return
 	 */
 	public String getID() {
 		return this.id;
+	}
+
+	/**
+	 * 获取beanId
+	 * @param beanId
+	 */
+	public void setID(String beanId) {
+		this.id = beanId;
 	}
 	/**
 	 * 判断是否存在构造器参数

@@ -1,11 +1,14 @@
 package org.litespring.core.io;
 
+import org.litespring.util.ClassUtils;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.litespring.util.ClassUtils;
-
+/**
+ * 类路径文件资源
+ */
 public class ClassPathResource implements Resource {
 
 	private String path;

@@ -15,6 +15,5 @@ public class ApplicationContextTest4 {
 		
 		Assert.assertNotNull(petStore.getAccountDao());
 		Assert.assertNotNull(petStore.getItemDao());
-		
-	}	
+	}
 }
